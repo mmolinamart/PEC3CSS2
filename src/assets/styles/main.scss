@@ -1,0 +1,86 @@
+/**
+ * Import variables
+ */
+
+@tailwind base;
+
+@layer base {
+    body {
+        @apply text-gray-700;
+        @apply text-sm;
+        @apply font-light;
+        @apply tracking-wide;
+        @apply font-sans;
+        @apply leading-normal;
+        @apply text-justify;
+    }
+    footer {
+        @apply text-white;
+    }
+    button {
+        @apply bg-indigo-300;
+    }
+    i {
+        @apply text-xl;
+    }
+    h1 {
+      @apply text-2xl;
+    }
+    h2 {
+      @apply text-xl;
+      @apply font-bold;
+      @apply text-center;
+      @apply my-2;
+    }
+    h3 {
+      @apply text-lg;
+      @apply text-center;
+    }
+    h4 {
+        @apply text-base;
+        @apply font-bold;
+    }
+    a {
+      @apply hover:text-gray-400;
+    }
+    .info {
+        @apply text-pink-500;
+        @apply font-bold;
+        @apply text-2xl;
+    }
+    .nodec {
+        @apply list-disc;
+    }
+    li {
+        @apply pb-5;
+    }
+    .quote h4{
+        @apply text-xl;
+    }
+   
+  }
+
+@tailwind components;
+
+@import "variables";
+
+/**
+ * Import npm dependencies
+ * see: https://en.parceljs.org/module_resolution.html
+ * see commented examples below
+ */
+ @import '@fortawesome/fontawesome-free/css/all.css';
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+
+/**
+ * Import layouts
+ * It's a best practice to use a partial for each page
+ */
+
+@import "layouts/home";
+
+@tailwind utilities;
+/**
+ * Do NOT include anything else in this file!
+ */
